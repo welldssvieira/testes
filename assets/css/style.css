@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #f5f5f5;
+}
+
+html {
+    font-family: "Geist", sans-serif;
+}
+
+.bloco {
+    padding: 4% 25%;
+}
+
+/* Títulos */
+
+h1 {
+    font-size: 40pt;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #191e25;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #191e25;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+}
+
+b {
+    font-weight: 500;
+}
+
+/* Containers flexíveis */
+
+.topicos,
+.exemplo_texto,
+.card_atividade .textos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card_atividade .textos .tags {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.topicos,
+.bloco_cabecalho {
+    margin-bottom: 40px;
+}
+
+.bloco_introducao {
+    margin-bottom: 50px;
+}
+
+.topico {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ícones dos tópicos */
+
+.icone_topico {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e7edf3;
+    font-size: 20px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #191e25;
+    content: '';
+}
+
+/* Textos dos tópicos */
+
+.titulo_topico {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #191e25;
+}
+
+.descricao_topico {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #606060;
+}
+
+/* Exemplo texto */
+
+.exemplo_texto {
+    background-color: #f5f5f5;
+    border: 1px solid #e7edf3;
+    width: 650px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exemplo_texto_titulo {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+    margin-bottom: 20px;
+}
+
+.exemplo_texto_descricao {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+}
+
+/* Tabela */
+
+table {
+    width: 650px;
+    height: 150px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 15px 40px;
+    font-size: 15px;
+    text-align: start;
+    border: 1px solid #e7edf3;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #606060;
+}
+
+th,
+td,
+tr {
+    height: 40px;
+    border: 1px solid #e7edf3;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+tr {
+    background-color: #ffffff;
+}
+
+td {
+    padding-left: 40px;
+}
+
+/* Topico Dropbox */
+
+.topico_dropbox,
+.timeline .topico_dropbox {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 650px;
+    height: 80px;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 1px solid #e7edf3;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.timeline .topico_dropbox {
+    background-color: #ffffff;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.topico_dropbox_cabecalho,
+.timeline .topico_dropbox_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topico_dropbox_cabecalho .titulo,
+.timeline .topico_dropbox_cabecalho .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+}
+
+.topico_dropbox_descricao,
+.timeline .topico_dropbox_descricao {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+    display: none;
+}
+
+.topico_dropbox_cabecalho .icone img,
+.timeline .topico_dropbox_cabecalho .icone img {
+    width: 30px;
+}
+
+/* Card atividade */
+
+.card_atividade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border: 1px solid #e7edf3;
+    width: 650px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px 40px;
+    margin-bottom: 10px;
+}
+
+.card_atividade .textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card_atividade .textos .titulo {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+    margin-bottom: 20px;
+}
+
+.card_atividade .textos .subtitulo {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #191e25;
+}
+
+.card_atividade .textos .tags {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card_atividade .textos .tags .tag {
+    border: 1px solid #191e25;
+    border-radius: 50px;
+    padding: 5px 15px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.card_atividade .botao {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card_atividade .botao .icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.card_atividade .botao .icone img {
+    width: 15px;
+}
+
+.card_atividade .botao .texto {
+    font-size: 15px;
+}
+
+/* Marcador com animação */
+
+.marcador {
+    background: linear-gradient(to right, #fff59d 0%, #fff59d 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: destaque 2s ease-out forwards;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+@keyframes destaque {
+    from {
+        background-size: 0% 100%;
+    }
+
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .bloco {
+    padding: 4% 5%;
+  }
+
+  /* Ajusta largura fixa para 100% com max-width */
+  .exemplo_texto,
+  table,
+  .topico_dropbox,
+  .timeline .topico_dropbox,
+  .card_atividade {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+
+  /* Altura adaptável para tópicos dropbox */
+  .topico_dropbox,
+  .timeline .topico_dropbox {
+    padding-bottom: 20px;
+  }
+
+  /* Títulos e textos menores */
+  h1 {
+    font-size: 28pt;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .exemplo_texto_titulo {
+    font-size: 20px;
+  }
+
+  .exemplo_texto_descricao {
+    font-size: 14px;
+  }
+
+  .topico_dropbox_cabecalho .titulo,
+  .timeline .topico_dropbox_cabecalho .titulo {
+    font-size: 16px;
+  }
+
+  .card_atividade .textos .titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card_atividade .textos .subtitulo {
+    font-size: 13px;
+  }
+
+  /* Botão menor para mobile */
+  .card_atividade .botao {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* Tags com menor padding */
+  .card_atividade .textos .tags .tag {
+    padding: 4px 10px;
+    font-size: 9px;
+  }
+
+  /* Ajuste para td com padding menor */
+  td {
+    padding-left: 15px;
+  }
+}
+
+/* Para telas muito pequenas (celulares pequenos) */
+@media (max-width: 400px) {
+  .bloco {
+    padding: 4% 3%;
+  }
+
+  h1 {
+    font-size: 22pt;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .exemplo_texto {
+    height: auto;
+  }
+
+  .card_atividade {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .card_atividade .botao {
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+  }
+}
+
+/* Texto fluído e adaptável no geral */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  line-height: 1.3;
+}
+
+p,
+.exemplo_texto_descricao,
+.descricao_topico,
+.card_atividade .textos .subtitulo {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  line-height: 1.5;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.exemplo_texto_titulo,
+.card_atividade .textos .titulo,
+.topico_dropbox_cabecalho .titulo {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  line-height: 1.3;
+}
+
+/* Ajustes para as descrições dos tópicos para melhor quebra de linha */
+.descricao_topico {
+  max-width: 100%;
+}
+
+/* Para tabelas, ajuste a fonte e o padding para melhor leitura */
+table {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+td {
+  padding-left: clamp(10px, 2vw, 40px);
+  word-break: break-word;
+}
+
+/* Responsividade para textos em telas menores */
+@media (max-width: 768px) {
+  /* Já existente... */
+
+  /* Complementa com mais espaçamento para textos */
+  p,
+  .descricao_topico,
+  .exemplo_texto_descricao,
+  .card_atividade .textos .subtitulo {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Evita textos muito comprimidos nas colunas */
+  .card_atividade .textos {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Ajusta ainda mais a legibilidade no menor breakpoint */
+  p,
+  .descricao_topico,
+  .exemplo_texto_descricao,
+  .card_atividade .textos .subtitulo {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    line-height: 1.6;
+  }
+}
