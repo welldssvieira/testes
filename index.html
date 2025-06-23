@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport"       content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description"    content="Resumo sobre UX e UI, explicando conceitos, evolução histórica e funções dos profissionais da área para desenvolvimento de produtos focados no usuário." />
-    <meta name="author"         content="Wellington" />
-    <meta name="keywords"       content="UX, UI, User Experience, User Interface, Design de Produto, Experiência do Usuário, Interface Digital, Timeline UX, Profissionais UX, Design Thinking" />
-    <meta name="language"       content="pt-BR" />
-    <meta name="country"        content="BR" />
-    <meta name="robots"         content="index, follow" />
-    <meta name="distribution"   content="global" />
-    <meta name="rating"         content="general" />
-    <meta name="revisit-after"  content="7 days" />
+    <meta name="description"
+        content="Resumo sobre UX e UI, explicando conceitos, evolução histórica e funções dos profissionais da área para desenvolvimento de produtos focados no usuário." />
+    <meta name="author" content="Wellington" />
+    <meta name="keywords"
+        content="UX, UI, User Experience, User Interface, Design de Produto, Experiência do Usuário, Interface Digital, Timeline UX, Profissionais UX, Design Thinking" />
+    <meta name="language" content="pt-BR" />
+    <meta name="country" content="BR" />
+    <meta name="robots" content="index, follow" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="revisit-after" content="7 days" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css" />
 
     <title>Resumo sobre UX e UI</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
-
 
 <body>
 
@@ -30,63 +32,99 @@
         <h1>Definições de UX e UI</h1>
 
         <section class="bloco_introducao">
-
             <h2>Introdução</h2>
-
-            <p>Este módulo apresenta os fundamentos de UX (User Experience) e UI (User Interface), explicando suas
+            <p class="paragrafo_guia">
+                Este módulo apresenta os fundamentos de UX (User Experience) e UI (User Interface), explicando suas
                 definições, diferenças e como se complementam no desenvolvimento de produtos digitais. São exploradas as
                 diferentes áreas de atuação dentro da experiência do usuário, bem como os principais artefatos
-                utilizados no
-                processo de design.</p>
+                utilizados no processo de design.
+            </p>
         </section>
 
         <section class="bloco_cabecalho">
-            <h2>O que é UX ?</h2>
-
-            <p><b>UX refere-se à experiência completa</b> que um usuário vivencia ao interagir com um produto digital —
-                como
-                um site, app ou sistema. O foco está em:</p>
+            <h2>O que é Experiência do Usuário (UX)?</h2>
+            <p class="paragrafo_guia">
+                UX (User Experience, ou Experiência do Usuário) é a percepção e reação que uma pessoa tem ao interagir
+                com um produto, sistema ou serviço. De forma oficial, segundo a ISO 9241-210, UX é o conjunto das
+                respostas, percepções e emoções resultantes do uso, englobando aspectos emocionais, psicológicos,
+                funcionais e comportamentais da interação.
+            </p>
+            <p class="paragrafo_guia">
+                <strong>Queremos que os usuários <em>amem</em> nossos produtos e, para isso, a experiência precisa ser:
+            </strong>
+            </p>
         </section>
 
-        <section class="topicos">
+        <div class="topicos_2colunas">
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Usabilidade</h3>
-                    <p class="descricao_topico">O quão fácil e eficiente é usar o produto.</p>
-                </div>
-            </article>
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Útil</h3>
+                        <p class="descricao_topico">Resolve uma necessidade real do usuário.</p>
+                    </div>
+                </article>
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Satisfação</h3>
-                    <p class="descricao_topico">Se a interação é agradável e intuitiva.</p>
-                </div>
-            </article>
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Desejável</h3>
+                        <p class="descricao_topico">Visualmente atraente e agradável.</p>
+                    </div>
+                </article>
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Aprendizado contínuo</h3>
-                    <p class="descricao_topico">Aproveita padrões familiares para tornar a navegação mais fluida.</p>
-                </div>
-            </article>
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Acessível</h3>
+                        <p class="descricao_topico">Funciona para pessoas com deficiências.</p>
+                    </div>
+                </article>
+            </section>
 
-        </section>
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Confiável</h3>
+                        <p class="descricao_topico">Gera segurança e previsibilidade.</p>
+                    </div>
+                </article>
 
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Encontrável</h3>
+                        <p class="descricao_topico">Fácil de navegar e localizar informações.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Usável</h3>
+                        <p class="descricao_topico">Fácil de aprender e usar.</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
 
         <section class="exemplo_texto">
-            <div class="exemplo_texto_titulo">
-                Exemplo
-            </div>
+            <div class="exemplo_texto_titulo">Exemplo</div>
             <div class="exemplo_texto_descricao">
                 Ao acessar um e-commerce, o usuário encontra elementos como fotos dos produtos, opções de tamanho/cor e
                 frete. A familiaridade com essa estrutura facilita a compra — isso é design de UX em ação.
@@ -98,45 +136,90 @@
     <section class="bloco">
 
         <section class="bloco_cabecalho">
-            <h2>O que é UI ?</h2>
+            <h2>Definição de UI (User Interface)</h2>
 
-            <p><b>UI é a parte visual e interativa de um produto digital. </b> Ela define como o sistema parece e se
-                apresenta ao usuário, incluindo:</p>
+            <p class="paragrafo_guia">
+                UI é a camada visual e interativa, formada pelos elementos gráficos — botões, menus, cores, tipografia,
+                ícones e animações — que permitem a interação do usuário com o sistema.
+            </p>
+
+            <p class="paragrafo_guia">
+                <strong>Relação entre UX e UI:</strong>
+            </p>
         </section>
 
-        <section class="topicos">
+        <div class="topicos_2colunas">
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Botões e menus</h3>
-                    <p class="descricao_topico">Importantes para navegação.</p>
-                </div>
-            </article>
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Botões e menus</h3>
+                        <p class="descricao_topico">Permitem a navegação e a execução de ações.</p>
+                    </div>
+                </article>
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Tipografia, cores e ícones</h3>
-                    <p class="descricao_topico">Criam uma identidade visual única.</p>
-                </div>
-            </article>
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Tipografia, cores e ícones</h3>
+                        <p class="descricao_topico">Definem a ID visual e ajudam na comunicação.</p>
+                    </div>
+                </article>
 
-            <article class="topico">
-                <div class="icone_topico">
-                    <i class="fa-solid fa-check"></i>
-                </div>
-                <div class="texto_topico">
-                    <h3 class="titulo_topico">Layouts e organização da tela</h3>
-                    <p class="descricao_topico">Tornam a utilização mais simples e agradável.</p>
-                </div>
-            </article>
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Layouts e organização da tela</h3>
+                        <p class="descricao_topico">Distribuem os elementos de forma lógica.</p>
+                    </div>
+                </article>
+            </section>
 
-        </section>
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Espaçamento e alinhamento</h3>
+                        <p class="descricao_topico">Criam ritmo visual e facilitam a leitura.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Estados visuais</h3>
+                        <p class="descricao_topico">Indicam comportamento e disponibilidade.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Componentes reutilizáveis</h3>
+                        <p class="descricao_topico">Ajudam a manter consistência e agilidade.</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <p class="paragrafo_guia">
+            UX é um conceito mais amplo que UI. A interface é apenas um dos componentes da experiência total, que inclui
+            também conteúdo, sons, sensações, interações físicas, suporte, manuais e outros canais de contato.
+        </p>
 
         <section class="exemplo_texto">
             <h3 class="exemplo_texto_titulo">Exemplo</h3>
@@ -153,9 +236,49 @@
         <section class="bloco_cabecalho">
             <h2>Diferenças entre UX e UI</h2>
 
-            <p><b>Embora similares,</b> os termos possuem focos diferentes que quando unidos agregam valor ao
-                desenvolvimento de produtos focados no usuário.</p>
+            <p class="paragrafo_guia">
+                <b>Embora similares,</b> os termos possuem focos diferentes que, quando unidos, agregam valor ao
+                desenvolvimento de produtos centrados no usuário.
+            </p>
+
+            <p class="paragrafo_guia">
+                <strong>Relação entre UX e UI:</strong>
+            </p>
         </section>
+
+        <div class="topicos_2colunas">
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">UX define o que</h3>
+                        <p class="descricao_topico">O usuário precisa e espera da experiência.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">UI define como</h3>
+                        <p class="descricao_topico">Essa experiência será entregue visual e interativamente.</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+        <p class="paragrafo_guia">
+            Nem toda UX depende de UI — por exemplo, em experiências auditivas, interações físicas ou até no atendimento
+            ao cliente — mas toda UI, ao ser visual e interativa, precisa proporcionar uma experiência funcional, fluida
+            e coerente com os objetivos do usuário.
+        </p>
 
         <table class="tabela_comparativa">
             <caption>Tabela 01 - Diferenças entre UX e UI</caption>
@@ -185,7 +308,7 @@
 
     <section class="bloco">
         <section class="bloco_cabecalho">
-            <h2>Diferentes áreas de UX</h2>
+            <h1>Diferentes áreas de UX</h1>
 
             <p>Embora "UX Design" seja um termo guarda-chuva, ele é composto por diversas subáreas ou especializações
                 que trabalham juntas para garantir a melhor experiência possível para o usuário.</p>
@@ -313,7 +436,7 @@
 
     <section class="bloco">
         <section class="bloco_cabecalho">
-            <h2>Linha do tempo - Evolução da UX:</h2>
+            <h1>Linha do tempo - Evolução da UX:</h1>
             <p><strong>Embora similares</strong>, os termos possuem focos diferentes que quando unidos agregam valor ao
                 desenvolvimento de produtos focados no usuário.</p>
         </section>
@@ -322,67 +445,123 @@
 
             <section class="topico_dropbox" onclick="expandirBox(this)">
                 <header class="topico_dropbox_cabecalho">
-                    <h3 class="titulo"><strong>1940 – 1970:</strong> Ergonomia e Interação Humano-Máquina</h3>
+                    <div class="data">
+                        <h3 class="titulo"><strong>1940 – 1970 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Ergonomia e IHC</h3>
+                    </div>
                     <div class="icone" aria-hidden="true">
                         <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
                     </div>
                 </header>
                 <div class="topico_dropbox_descricao" hidden>
                     <p>
-                        Durante e após a Segunda Guerra Mundial, engenheiros, psicólogos e ergonomistas passaram a
-                        estudar
-                        como tornar máquinas mais seguras e eficientes para os operadores humanos. Esses estudos
-                        originaram
-                        os primeiros conceitos de usabilidade e interação homem-máquina, que mais tarde seriam a base
-                        para o
-                        design de interfaces.
+                        Durante e após a Segunda Guerra Mundial, engenheiros, psicólogos e ergonomistas estudaram como
+                        tornar máquinas mais seguras e eficientes para operadores humanos. Esses estudos deram origem
+                        aos primeiros conceitos de usabilidade e interação homem-máquina, base para o design de
+                        interfaces.
                     </p>
                 </div>
             </section>
 
             <section class="topico_dropbox" onclick="expandirBox(this)">
                 <header class="topico_dropbox_cabecalho">
-                    <h3 class="titulo"><strong>1980 – 1990:</strong> A Revolução da Interface Gráfica</h3>
+                    <div class="data">
+                        <h3 class="titulo"><strong>1980 – 1985 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Computação no Cotidiano</h3>
+                    </div>
                     <div class="icone" aria-hidden="true">
                         <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
                     </div>
                 </header>
                 <div class="topico_dropbox_descricao" hidden>
                     <p>
-                        Com o Macintosh, a Apple introduziu interfaces visuais baseadas em janelas, ícones e menus. Essa
-                        abordagem revolucionou o mercado, tornando o uso dos computadores mais intuitivo para usuários
-                        comuns. A Interface Gráfica do Usuário (GUI) se tornou padrão em sistemas operacionais.
+                        O uso do computador começa a se difundir para facilitar operações rotineiras, automatizando
+                        tarefas repetitivas e aumentando a eficiência nos ambientes profissional e pessoal.
                     </p>
                 </div>
             </section>
 
             <section class="topico_dropbox" onclick="expandirBox(this)">
                 <header class="topico_dropbox_cabecalho">
-                    <h3 class="titulo"><strong>1990 – 2000:</strong> O Nascimento da Experiência do Usuário</h3>
+                    <div class="data">
+                        <h3 class="titulo"><strong>1985 – 1990 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Interfaces Gráficas Populares</h3>
+                    </div>
                     <div class="icone" aria-hidden="true">
                         <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
                     </div>
                 </header>
                 <div class="topico_dropbox_descricao" hidden>
                     <p>
-                        Don Norman, trabalhando na Apple, introduz o termo "User Experience (UX)", ampliando a visão
-                        sobre o
-                        papel do design. UX passa a considerar emoções, expectativas e contexto de uso, estabelecendo-se
-                        como uma disciplina estratégica além da usabilidade técnica.
+                        Apple e Microsoft lideram a inovação com a popularização das interfaces gráficas, que facilitam
+                        a interação por meio de janelas, ícones e menus visuais, tornando os computadores mais
+                        intuitivos.
                     </p>
                 </div>
             </section>
 
             <section class="topico_dropbox" onclick="expandirBox(this)">
                 <header class="topico_dropbox_cabecalho">
-                    <h3 class="titulo"><strong>2000 – 2010:</strong> Web, Mobile e Design Responsivo</h3>
+                    <div class="data">
+                        <h3 class="titulo"><strong>1990 – 1995 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Origem do termo UX</h3>
+                    </div>
                     <div class="icone" aria-hidden="true">
                         <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
                     </div>
                 </header>
                 <div class="topico_dropbox_descricao" hidden>
                     <p>
-                        A popularização da internet e o avanço dos smartphones impulsionaram o design digital. O design
+                        Donald Norman, na Apple, introduz o termo “User Experience (UX)”, ampliando a visão sobre o
+                        papel do design ao considerar emoções, expectativas e contexto de uso, estabelecendo a UX como
+                        uma disciplina estratégica além da usabilidade técnica.
+                    </p>
+                </div>
+            </section>
+
+            <section class="topico_dropbox" onclick="expandirBox(this)">
+                <header class="topico_dropbox_cabecalho">
+                    <div class="data">
+                        <h3 class="titulo"><strong>1995 – 2000 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Usabilidade e Eficiência</h3>
+                    </div>
+                    <div class="icone" aria-hidden="true">
+                        <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
+                    </div>
+                </header>
+                <div class="topico_dropbox_descricao" hidden>
+                    <p>
+                        O foco principal está na usabilidade, eficiência e facilidade de uso dos sistemas, com o
+                        objetivo de melhorar a experiência prática do usuário.
+                    </p>
+                </div>
+            </section>
+
+            <section class="topico_dropbox" onclick="expandirBox(this)">
+                <header class="topico_dropbox_cabecalho">
+                    <div class="data">
+                        <h3 class="titulo"><strong>2000 – 2010 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">Expansão para Web e Mobile</h3>
+                    </div>
+                    <div class="icone" aria-hidden="true">
+                        <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
+                    </div>
+                </header>
+                <div class="topico_dropbox_descricao" hidden>
+                    <p>
+                        A popularização da internet e o avanço dos smartphones impulsionam o design digital. O design
                         responsivo torna-se essencial para adaptar interfaces a diferentes telas. Empresas como Google e
                         Amazon adotam práticas centradas no usuário (DCU) como base do sucesso digital.
                     </p>
@@ -391,7 +570,12 @@
 
             <section class="topico_dropbox" onclick="expandirBox(this)">
                 <header class="topico_dropbox_cabecalho">
-                    <h3 class="titulo"><strong>2010 até hoje:</strong> UX como Estratégia de Negócio</h3>
+                    <div class="data">
+                        <h3 class="titulo"><strong>2010 – 2025 :</strong></h3>
+                    </div>
+                    <div class="titulo">
+                        <h3 class="titulo">UX como Estratégia de Negócio</h3>
+                    </div>
                     <div class="icone" aria-hidden="true">
                         <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir">
                     </div>
@@ -400,14 +584,1156 @@
                     <p>
                         A experiência do usuário se consolida como diferencial competitivo. Metodologias como Design
                         Thinking, Lean UX e HCD ganham espaço. UX se expande para produtos físicos, serviços e marcas,
-                        com
-                        foco total na jornada e ciclo de vida do usuário em múltiplos pontos de contato.
+                        com foco total na jornada e ciclo de vida do usuário em múltiplos pontos de contato.
                     </p>
                 </div>
             </section>
+        </section>
+
+    </section>
+
+    <section class="bloco">
+
+        <section class="bloco_cabecalho">
+            <h1>Fundamentos da Experiência do Usuário</h1>
+            <p class="paragrafo_guia">
+                A experiência do usuário é moldada por diversos fatores que vão além da estética ou da funcionalidade.
+                Cada interação, desde o primeiro contato visual até o uso contínuo do produto, é impactada por elementos
+                visuais, comportamentais, técnicos e emocionais.
+            </p>
+            <p class="paragrafo_guia">
+                Entender esses fatores é essencial para criar interfaces que não apenas funcionem, mas que também
+                encantem, comuniquem e facilitem a vida do usuário.
+            </p>
+        </section>
+
+        <div class="topicos_2colunas">
+            <section class="topicos">
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Emoções e sentimentos</h3>
+                        <p class="descricao_topico">Como o usuário se sente durante a interação.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Crenças pessoais</h3>
+                        <p class="descricao_topico">Expectativas que influenciam a percepção.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Preferências e hábitos</h3>
+                        <p class="descricao_topico">Costumes e modos de usar produtos e serviços.</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="topicos">
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Comportamentos e atitudes</h3>
+                        <p class="descricao_topico">Reações observáveis durante a interação.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Reações físicas e psicológicas</h3>
+                        <p class="descricao_topico">Fatores como stress, cansaço e conforto.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Necessidades explícitas e implícitas</h3>
+                        <p class="descricao_topico">Demandas ativas e passivas dos usuários.</p>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+
+    </section>
+
+    <section class="bloco">
+
+        <section class="bloco_cabecalho">
+            <h1>Princípios Fundamentais da UX</h1>
+            <p>
+                Os princípios fundamentais da Experiência do Usuário servem como guias para o desenvolvimento de
+                soluções que realmente atendam às necessidades humanas.
+            </p>
+            <p class="paragrafo_guia">
+                Donald Norman destacou três pilares essenciais que ajudam a orientar decisões de design mais eficazes e
+                humanas:
+            </p>
+        </section>
+
+        <table class="tabela_comparativa">
+            <caption>Princípios Fundamentais da UX (Norman, 2008)</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Princípio</th>
+                    <th scope="col">Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Empatia</td>
+                    <td>Compreender o usuário, suas dores e motivações.</td>
+                </tr>
+                <tr>
+                    <td>Amplitude de Pensamentos</td>
+                    <td>Ter visão ampla sem perder os detalhes essenciais.</td>
+                </tr>
+                <tr>
+                    <td>Experimentação</td>
+                    <td>Testar, aprender com erros e melhorar sempre.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section class="bloco">
+
+        <section class="bloco_cabecalho">
+            <h1>Design Centrado no Usuário (DCU)</h1>
+            <p>
+                O Design Centrado no Usuário (DCU) é uma abordagem metodológica que orienta o desenvolvimento de
+                produtos com base nas necessidades, desejos e limitações dos usuários finais. Essa prática busca
+                envolver ativamente os usuários em todas as fases do processo, garantindo que as soluções geradas sejam
+                não apenas funcionais, mas também significativas e usáveis.
+            </p>
+            <p class="paragrafo_guia">
+                Para guiar esse processo de forma sistemática, a norma ISO 9241 propõe uma estrutura composta por etapas
+                bem definidas. Cada etapa permite aprofundar a compreensão do público-alvo e validar decisões de design
+                com base em dados reais, mantendo o foco na experiência do usuário do início ao fim.
+            </p>
+        </section>
+
+        <table class="tabela_comparativa">
+            <caption>Etapas do DCU (ISO 9241)</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Etapa</th>
+                    <th scope="col">Objetivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Compreender e especificar contexto</td>
+                    <td>Identificar usuários, tarefas e ambiente.</td>
+                </tr>
+                <tr>
+                    <td>Especificar requisitos do usuário</td>
+                    <td>Entender necessidades e objetivos do usuário.</td>
+                </tr>
+                <tr>
+                    <td>Produzir soluções</td>
+                    <td>Criar alternativas com base nas evidências.</td>
+                </tr>
+                <tr>
+                    <td>Avaliar projeto</td>
+                    <td>Verificar aderência e coletar feedback.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="paragrafo_guia">
+            Esse processo é cíclico e iterativo, alimentado por feedbacks reais e contínuos que orientam o aprimoramento
+            constante da solução.
+        </p>
+
+    </section>
+
+    <section class="bloco">
+        <section class="bloco_cabecalho">
+            <h1>Papéis Profissionais em UX</h1>
+            <p>
+                O campo de UX envolve uma série de especializações que, juntas, garantem a criação de experiências
+                completas e de alta qualidade para o usuário final. Cada profissional desempenha um papel fundamental,
+                desde a pesquisa e análise até o design visual, estratégias e acessibilidade, trabalhando de forma
+                colaborativa para construir produtos eficazes e envolventes.
+            </p>
+            <p class="paragrafo_guia">
+                Conhecer as responsabilidades e competências específicas de cada função ajuda a entender como o time de
+                UX atua para equilibrar as necessidades do usuário e os objetivos de negócio.
+            </p>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UX Researcher</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Pesquisa qualitativa e quantitativa, entrevistas, testes, análise de dados e comportamento para
+                    embasar decisões de design.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UX Designer</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Arquitetura da informação, design de interação, criação de wireframes e protótipos para estruturar e
+                    guiar a experiência.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UI Designer</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Design visual, criação de elementos gráficos, animações e identidade visual que tornam a interface
+                    atraente e consistente.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UX Writer</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Produção de textos claros, microtextos e mensagens para facilitar a compreensão e melhorar a
+                    comunicação na interface.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UX Strategist</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Alinhamento do UX aos objetivos de negócio, definição de metas e roadmap estratégico para garantir
+                    impacto positivo.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">UX Analyst / Metrics</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Análise de dados, KPIs, métricas de desempenho e satisfação do usuário para otimizar a experiência
+                    continuamente.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">Service Designer</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Mapeamento da jornada do usuário em serviços, otimização da experiência multicanal considerando
+                    pontos digitais e físicos.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">Interaction Designer</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Foco nas interações específicas, fluxos e microinterações para criar uma experiência fluida e
+                    responsiva.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">Accessibility Specialist</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Garantia de acessibilidade para pessoas com deficiências e necessidades especiais, promovendo
+                    inclusão.</p>
+            </div>
+        </section>
+
+        <section class="topico_dropbox" onclick="expandirBox(this)">
+            <header class="topico_dropbox_cabecalho">
+                <h3 class="titulo">Content Strategist</h3>
+                <div class="icone" aria-hidden="true">
+                    <img src="media/icones/Icon_seta_baixo.png" alt="Ícone de seta para expandir" />
+                </div>
+            </header>
+            <div class="topico_dropbox_descricao" hidden>
+                <p>Planejamento e organização do conteúdo para melhorar usabilidade e experiência, garantindo
+                    consistência e clareza.</p>
+            </div>
+        </section>
+
+        <p class="paragrafo_guia" style="margin-top:1.5rem;">
+            A sinergia entre esses profissionais é essencial para garantir que o produto final seja não apenas
+            funcional, mas também relevante, acessível e agradável para seus usuários. Um time de UX alinhado
+            potencializa resultados e fortalece a conexão entre usuário e marca.
+        </p>
+    </section>
+
+    <section class="bloco">
+        <section class="bloco_cabecalho">
+            <h1>Ferramentas e Artefatos em UX</h1>
+            <p>
+                No universo do UX, diferentes ferramentas e artefatos são utilizados para mapear, projetar, validar e
+                comunicar ideias ao longo do processo de criação. Esses instrumentos ajudam a entender o usuário,
+                organizar informações, testar hipóteses e garantir a qualidade da experiência.
+            </p>
+            <p class="paragrafo_guia">
+                A familiaridade com esses recursos é fundamental para qualquer profissional que queira entregar soluções
+                eficazes, baseadas em evidências e alinhadas às necessidades reais dos usuários.
+            </p>
+        </section>
+
+        <div class="artefato">
+            <h2>Mapas de Empatia</h2>
+            <p>
+                Os Mapas de Empatia são ferramentas visuais essenciais no processo de design centrado no usuário. Eles
+                auxiliam equipes a compreender profundamente as emoções, frustrações, desejos e motivações dos usuários,
+                indo além de dados demográficos e comportamentais. Ao estruturar essas informações em categorias como "O
+                que
+                o usuário pensa?", "O que sente?", "O que escuta?" e "O que fala e faz?", as equipes conseguem
+                desenvolver
+                soluções com mais empatia e foco real nas necessidades humanas.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Exemplo de Mapa de Empatia" />
+            </div>
+            <p>
+                Normalmente utilizados nas etapas iniciais de projetos, esses mapas promovem alinhamento entre os
+                stakeholders e ajudam a validar suposições sobre o público. Quando bem conduzidos, servem como base para
+                a
+                criação de personas mais precisas e para a elaboração de jornadas do usuário mais realistas, impactando
+                diretamente na qualidade da experiência projetada.
+            </p>
+            <p>
+                Além disso, eles facilitam a comunicação entre equipes multidisciplinares, criando um entendimento comum
+                sobre
+                quem são os usuários e quais são seus desafios. Isso contribui para decisões de design mais assertivas e
+                estratégias de produto que realmente atendem às necessidades do público.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Personas</h2>
+            <p>
+                Personas são representações fictícias baseadas em dados reais, que ajudam a sintetizar o perfil dos
+                principais tipos de usuários de um produto ou serviço. Elas incluem informações como objetivos,
+                comportamentos, desafios, valores e até frases típicas que expressam suas dores ou desejos. Criar
+                personas é
+                uma maneira eficaz de manter a equipe focada no usuário durante todo o processo de design.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Personas" />
+            </div>
+            <p>
+                Utilizadas amplamente em pesquisas, planejamento de funcionalidades, tomada de decisões e testes, as
+                personas evitam que decisões sejam tomadas com base em achismos. Elas orientam desde a arquitetura da
+                informação até a comunicação visual, garantindo que o produto final converse diretamente com quem
+                importa: o
+                usuário real.
+            </p>
+            <p>
+                Além disso, personas facilitam a comunicação interna e o alinhamento estratégico entre equipes,
+                promovendo
+                empatia e foco constante no público-alvo, o que contribui para produtos mais relevantes e eficazes no
+                mercado.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Jornada do Usuário</h2>
+            <p>
+                A Jornada do Usuário é uma ferramenta poderosa para mapear todos os passos que uma pessoa percorre ao se
+                relacionar com um produto, serviço ou marca. Ela inclui interações, pontos de contato, emoções,
+                pensamentos
+                e possíveis frustrações que surgem ao longo dessa trajetória. Ao entender cada estágio, é possível
+                otimizar
+                a experiência e minimizar atritos.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa da Jornada do Usuário" />
+            </div>
+            <p>
+                É comumente usada na fase de descoberta e diagnóstico de projetos, sendo essencial em processos de
+                redesign
+                e na identificação de oportunidades de inovação. Além disso, é uma forma eficiente de visualizar onde o
+                usuário está tendo boas ou más experiências, permitindo tomadas de decisão mais assertivas.
+            </p>
+            <p>
+                Com essa visão clara e detalhada, equipes multidisciplinares conseguem alinhar estratégias, priorizar
+                melhorias
+                e criar produtos mais intuitivos e alinhados às expectativas reais do público, promovendo maior
+                satisfação e
+                fidelização.
+            </p>
+        </div>
+        <div class="artefato">
+            <h2>Wireframes</h2>
+            <p>
+                Wireframes são esboços estruturais de páginas ou telas que mostram a disposição dos elementos principais
+                de
+                forma simplificada. Eles não se preocupam com estilo visual, mas sim com a hierarquia da informação,
+                navegação, usabilidade e funcionalidades. São ideais para explorar diferentes soluções rapidamente,
+                antes de
+                partir para designs visuais mais elaborados.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Wireframes" />
+            </div>
+            <p>
+                Muito utilizados por designers, desenvolvedores e stakeholders durante as etapas iniciais do design, os
+                wireframes servem como ponto de partida para alinhamentos e validações com a equipe. Podem variar de
+                versões
+                em papel e caneta a softwares como Figma e Balsamiq, dependendo do nível de fidelidade necessário.
+            </p>
+            <p>
+                Essa abordagem ajuda a economizar tempo e recursos ao identificar problemas de usabilidade e fluxo antes
+                da
+                implementação visual, facilitando uma comunicação clara entre os envolvidos e aumentando as chances de
+                sucesso
+                do projeto.
+            </p>
+        </div>
+        <div class="artefato">
+            <h2>Protótipos</h2>
+            <p>
+                Protótipos são modelos interativos que simulam a experiência de uso de um produto digital, mesmo antes
+                de
+                ele ser programado. Eles podem variar em fidelidade — de simples protótipos em papel até simulações
+                altamente realistas — e permitem testar interações, fluxos e conteúdo com usuários reais.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Protótipos" />
+            </div>
+            <p>
+                São amplamente utilizados em fases de validação, iteração de ideias e testes de usabilidade. Protótipos
+                são
+                essenciais para identificar problemas de navegação, usabilidade e lógica antes que recursos sejam
+                investidos
+                no desenvolvimento final. Isso reduz custos, aumenta a agilidade e melhora a qualidade do produto
+                entregue.
+            </p>
+            <p>
+                Além disso, protótipos facilitam a comunicação entre equipes multidisciplinares e stakeholders,
+                garantindo
+                alinhamento e antecipação de possíveis desafios antes da codificação.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Testes de Usabilidade</h2>
+            <p>
+                Os Testes de Usabilidade consistem em sessões práticas em que usuários reais interagem com protótipos ou
+                produtos finalizados para identificar dificuldades, erros e pontos de fricção na experiência. Esses
+                testes
+                são fundamentais para avaliar a eficácia de fluxos, linguagem, design de interação e arquitetura da
+                informação.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Testes de Usabilidade" />
+            </div>
+            <p>
+                Essa prática é indispensável em processos iterativos de design, pois permite coletar dados qualitativos
+                e
+                quantitativos valiosos. Com os resultados, equipes conseguem validar hipóteses, identificar ajustes
+                críticos
+                e aumentar significativamente as chances de sucesso do produto no mercado.
+            </p>
+            <p>
+                Além disso, os testes de usabilidade fortalecem a empatia da equipe com o usuário, revelando
+                comportamentos
+                inesperados e necessidades não atendidas, impulsionando melhorias contínuas.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Relatórios de Usabilidade</h2>
+            <p>
+                Relatórios de Usabilidade são documentos detalhados que organizam, analisam e apresentam os resultados
+                das avaliações realizadas com usuários reais. Esses relatórios combinam dados qualitativos e
+                quantitativos para evidenciar padrões de comportamento, identificar pontos críticos de atrito,
+                dificuldades encontradas e sugerir melhorias eficazes. São essenciais para registrar aprendizados e
+                garantir a rastreabilidade das decisões tomadas durante todo o processo de design e desenvolvimento.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Relatórios de Usabilidade" />
+            </div>
+            <p>
+                Geralmente produzidos após sessões de testes ou ciclos de validação, esses relatórios facilitam a
+                comunicação clara e objetiva das descobertas para equipes multidisciplinares e stakeholders. Eles
+                funcionam como uma ferramenta estratégica para alinhar objetivos, priorizar melhorias, ajustar escopos e
+                definir os próximos passos no desenvolvimento do produto.
+            </p>
+            <p>
+                Além disso, relatórios bem estruturados contribuem para a transparência do processo, servindo como
+                documentação para futuras revisões, garantindo que as decisões sejam sempre fundamentadas em evidências
+                reais.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Mapa de Calor (Heatmaps)</h2>
+            <p>
+                Mapas de Calor, ou Heatmaps, são representações visuais que destacam as áreas de uma interface que
+                recebem maior atenção dos usuários. Seja por meio de cliques, toques, movimentos do mouse ou tempo de
+                permanência, eles ajudam a revelar padrões de interação, indicando pontos de maior engajamento ou áreas
+                onde os usuários podem encontrar dificuldades.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Mapa de Calor (Heatmaps)" />
+            </div>
+            <p>
+                Frequentemente utilizados em fases de testes com produtos em produção ou protótipos avançados, os
+                heatmaps servem como apoio para otimizar layouts, reorganizar conteúdos e aprimorar chamadas para ação
+                (CTAs). Com dados concretos e observações comportamentais reais, eles permitem decisões mais precisas e
+                fundamentadas.
+            </p>
+            <p>
+                Além disso, os heatmaps ajudam equipes a entender como os usuários navegam e interagem com a interface,
+                possibilitando identificar elementos que funcionam bem e áreas que necessitam de ajustes para melhorar a
+                experiência geral.
+            </p>
+        </div>
+        <div class="artefato">
+            <h2>Análise Heurística</h2>
+            <p>
+                A Análise Heurística é uma metodologia de avaliação de interfaces que utiliza princípios consolidados de
+                usabilidade, como os desenvolvidos por Jakob Nielsen. Essa técnica é aplicada por especialistas em UX,
+                que inspecionam o produto avaliando sua conformidade com heurísticas específicas para identificar
+                problemas e oportunidades de melhoria, mesmo antes da interação com usuários reais.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Análise Heurística" />
+            </div>
+            <p>
+                Essa avaliação é especialmente valiosa nas fases iniciais e intermediárias dos projetos, funcionando
+                como um diagnóstico preventivo que economiza tempo e recursos. Além disso, a Análise Heurística
+                contribui para elevar a qualidade da interface, aumentando sua acessibilidade, consistência e facilidade
+                de uso, promovendo uma experiência mais intuitiva e eficiente para o usuário.
+            </p>
+            <p>
+                Por ser rápida e de baixo custo, essa técnica é amplamente adotada por equipes que desejam identificar
+                falhas estruturais e garantir que o produto atenda a padrões reconhecidos de usabilidade antes de
+                avançar para etapas mais custosas de desenvolvimento e testes.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Benchmarking</h2>
+            <p>
+                Benchmarking é uma prática estratégica que envolve o estudo detalhado de concorrentes e produtos
+                similares para identificar boas práticas, tendências e pontos a serem aprimorados. A análise pode
+                abranger funcionalidades, fluxos, design e desempenho, permitindo às equipes mapear o mercado e
+                direcionar seus esforços para diferenciação e inovação com base em dados concretos.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Benchmarking" />
+            </div>
+            <p>
+                Essa abordagem é aplicável em qualquer fase do projeto, mas tem especial importância nas etapas iniciais
+                de concepção ou redefinição do produto. O benchmarking oferece referências sólidas para inspirar
+                soluções eficazes e evitar erros comuns, atuando como uma bússola para o desenvolvimento alinhado às
+                expectativas e necessidades do mercado.
+            </p>
+            <p>
+                Além disso, o benchmarking ajuda a identificar lacunas e oportunidades competitivas, garantindo que o
+                produto não apenas acompanhe as tendências, mas também se destaque ao oferecer valor agregado,
+                fortalecendo sua posição e relevância no mercado.
+            </p>
+        </div>
+        <div class="artefato">
+            <h2>Storyboards</h2>
+            <p>
+                Storyboards são sequências ilustradas que contam visualmente a interação do usuário com um produto ou
+                serviço, como uma história em quadrinhos. Eles apresentam o cenário, personagens, ações e emoções,
+                facilitando o entendimento empático de como o usuário vivencia o sistema.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Storyboards" />
+            </div>
+            <p>
+                Essa ferramenta é fundamental para comunicar fluxos e situações complexas para pessoas técnicas e não
+                técnicas. Ela é amplamente usada em apresentações para stakeholders e durante o alinhamento entre
+                equipes multidisciplinares, auxiliando na antecipação de desafios e na melhoria da jornada do usuário.
+            </p>
+            <p>
+                Além disso, storyboards permitem uma visualização clara do contexto real de uso, tornando o processo de
+                ideação mais focado e colaborativo, o que contribui para soluções mais eficazes e centradas no usuário.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Design System</h2>
+            <p>
+                O Design System é uma biblioteca centralizada que reúne componentes, padrões visuais e diretrizes para
+                garantir uniformidade e eficiência na criação de interfaces digitais. Ele inclui elementos como botões,
+                cores, tipografia e comportamentos, facilitando a padronização em múltiplos produtos e equipes.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Design System" />
+            </div>
+            <p>
+                Com um Design System bem estruturado, as equipes economizam tempo e reduzem retrabalhos, pois todas as
+                partes envolvidas têm acesso a um guia único e atualizado. Essa abordagem melhora a colaboração entre
+                designers e desenvolvedores e assegura uma experiência consistente para o usuário final.
+            </p>
+            <p>
+                Normalmente adotado em projetos de médio a grande porte, o Design System também serve como base para
+                escalar produtos, facilitar manutenções e garantir que novos recursos se integrem harmoniosamente ao
+                ecossistema visual e funcional da empresa.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Card Sorting</h2>
+            <p>
+                Card Sorting é uma técnica de pesquisa que envolve a organização de cartões — que representam conteúdos
+                ou funcionalidades — pelos próprios usuários. O objetivo é entender como o público categoriza
+                informações para criar estruturas de navegação e menus mais intuitivos.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Card Sorting" />
+            </div>
+            <p>
+                Existem dois tipos principais: o aberto, onde os usuários criam suas próprias categorias, e o fechado,
+                onde eles alocam itens em categorias pré-definidas. A escolha depende dos objetivos do estudo e da
+                complexidade das informações envolvidas.
+            </p>
+            <p>
+                Essa técnica é especialmente útil em projetos com grande volume de conteúdo, como portais, e-commerces e
+                dashboards, pois auxilia na criação de uma arquitetura de informação alinhada ao modo de pensar do
+                usuário, facilitando a navegação e melhorando a experiência geral.
+            </p>
+        </div>
+        <div class="artefato">
+            <h2>Diagrama de Afinidade</h2>
+            <p>
+                O Diagrama de Afinidade é uma técnica visual para organizar ideias, agrupando dados, observações ou
+                insights semelhantes em categorias. Ele facilita a identificação de padrões e temas após pesquisas,
+                entrevistas ou dinâmicas em grupo.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Diagrama de Afinidade" />
+            </div>
+            <p>
+                Essa ferramenta promove a colaboração e o entendimento coletivo, sendo essencial na fase de análise e
+                síntese do processo de UX. A partir dela, as equipes conseguem estruturar informações que irão orientar
+                a criação de personas, jornadas do usuário e definição de funcionalidades.
+            </p>
+            <p>
+                O Diagrama de Afinidade torna palpáveis grandes volumes de dados, permitindo que insights importantes
+                surjam de forma natural e orientem decisões estratégicas para o desenvolvimento de produtos mais
+                alinhados às necessidades reais dos usuários.
+            </p>
+        </div>
+
+        <div class="artefato">
+            <h2>Testes A/B</h2>
+            <p>
+                Testes A/B são experimentos que comparam duas ou mais versões de uma interface, com pequenas variações
+                em layout, conteúdo ou funcionalidades, para identificar qual delas gera melhor resultado em métricas
+                específicas como conversão, cliques ou engajamento.
+            </p>
+            <div class="imagem">
+                <img src="https://cmriachaodasneves.ba.gov.br/wp-content/uploads/2025/05/placeholder-com-1280x720-1.webp"
+                    alt="Imagem ilustrativa de Testes A/B" />
+            </div>
+            <p>
+                Muito utilizados em otimização contínua, esses testes são comuns em websites, apps e campanhas digitais.
+                Ao basear decisões em dados reais e quantitativos, os Testes A/B ajudam a reduzir riscos e a melhorar a
+                eficiência das estratégias adotadas.
+            </p>
+            <p>
+                A técnica permite que equipes validem hipóteses de forma objetiva, priorizando mudanças que impactem
+                positivamente a experiência do usuário e os resultados do negócio, tornando o processo de melhoria
+                constante e focado em evidências concretas.
+            </p>
+        </div>
+
+        <p class="paragrafo_guia" style="margin-top:1.5rem;">
+            O domínio dessas ferramentas e artefatos proporciona uma base sólida para processos de design centrados no
+            usuário, permitindo que equipes avaliem, comuniquem e iterem suas soluções com maior precisão e empatia.
+        </p>
+    </section>
+
+    <section class="bloco">
+        <h1>Design de Serviços e UX</h1>
+        <p>
+            O Design de Serviços foca na experiência do usuário durante toda a jornada com um serviço, considerando
+            aspectos tangíveis e intangíveis para criar soluções centradas no humano.
+        </p>
+        <p>
+            Essa abordagem busca mapear todos os pontos de contato e interações que o cliente tem com o serviço,
+            garantindo uma experiência fluida, satisfatória e coerente. Além disso, envolve a coordenação entre
+            processos, pessoas e tecnologia para entregar valor real e consistente.
+        </p>
+
+        <table>
+            <caption>Metodologia 4D’s no Design de Serviços</caption>
+            <thead>
+                <tr>
+                    <th>Etapa</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Descobrir</td>
+                    <td>Coleta de dados, entrevistas e observações para entender o contexto.</td>
+                </tr>
+                <tr>
+                    <td>Definir</td>
+                    <td>Análise dos dados para identificar problemas e oportunidades.</td>
+                </tr>
+                <tr>
+                    <td>Desenvolver</td>
+                    <td>Criação de soluções, protótipos e testes iterativos.</td>
+                </tr>
+                <tr>
+                    <td>Entregar</td>
+                    <td>Implementação e acompanhamento para garantir a qualidade.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="bloco">
+
+        <section class="bloco_cabecalho">
+            <h1>Impactos financeiros da UX</h1>
+            <p>
+                A Experiência do Usuário (UX) tem impacto direto nas finanças das empresas. Um bom design reduz custos
+                operacionais, aumenta o engajamento e melhora taxas de conversão, fortalecendo a sustentabilidade e o
+                crescimento dos negócios. Veja na tabela os principais benefícios financeiros da UX.
+            </p>
+        </section>
+
+        <table>
+            <caption>Benefícios financeiros da Experiência do Usuário</caption>
+            <thead>
+                <tr>
+                    <th>Benefício</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Redução de custos com suporte</td>
+                    <td>Menos dúvidas e chamados, diminuindo gastos.</td>
+                </tr>
+                <tr>
+                    <td>Aumento do tempo de uso</td>
+                    <td>Usuários passam mais tempo no produto.</td>
+                </tr>
+                <tr>
+                    <td>Melhora na taxa de conversão</td>
+                    <td>Mais usuários realizam ações como compras.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="bloco_cabecalho" style="margin-top: 2em;">
+            <h2>Exemplos reais</h2>
+            <p>Grandes empresas investem em UX porque sabem que uma experiência do usuário bem planejada e executada não
+                só melhora a satisfação dos clientes, mas também gera resultados financeiros expressivos, aumenta a
+                fidelidade, fortalece a marca e cria uma vantagem competitiva sustentável no mercado cada vez mais
+                digital e competitivo.</p>
+        </section>
+
+        <div class="topicos_2colunas">
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Apple</h3>
+                        <p class="descricao_topico">Design intuitivo que gera alta fidelidade.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Amazon</h3>
+                        <p class="descricao_topico">Navegação eficiente que facilita as compras.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Airbnb</h3>
+                        <p class="descricao_topico">Experiências que facilitam decisões.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Google</h3>
+                        <p class="descricao_topico">Produtos simples, rápidos e claros.</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
+    </section>
+
+    <section class="bloco">
+
+        <section class="bloco_cabecalho">
+            <h1>Benefícios de uma Boa UX</h1>
+            <p>
+                Uma boa experiência do usuário (UX) é fundamental para o sucesso de qualquer produto ou serviço digital.
+                Ela não só aumenta a satisfação e a confiança dos usuários, como também reduz erros e frustrações,
+                facilitando a adoção e o uso contínuo. Além disso, uma UX bem planejada fortalece a reputação da marca,
+                amplia o alcance ao atender diversos perfis de usuários e promove maior engajamento, contribuindo
+                diretamente para melhores resultados financeiros e competitividade no mercado.
+            </p>
+
+            <p>
+                A seguir, veja os principais benefícios que uma boa UX oferece, impactando diretamente a percepção do
+                usuário e o desempenho do negócio.
+            </p>
+
 
         </section>
+
+        <div class="topicos_2colunas">
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Confiança e Satisfação</h3>
+                        <p class="descricao_topico">Usuários felizes retornam e recomendam.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Reputação da Marca</h3>
+                        <p class="descricao_topico">Experiência consistente eleva o prestígio.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Acessibilidade</h3>
+                        <p class="descricao_topico">Atende diversos perfis de usuários.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="topicos">
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Redução de Erros</h3>
+                        <p class="descricao_topico">Interface clara evita confusões.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Adoção Fácil</h3>
+                        <p class="descricao_topico">Produto fácil de usar cresce rápido.</p>
+                    </div>
+                </article>
+
+                <article class="topico">
+                    <div class="icone_topico">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="texto_topico">
+                        <h3 class="titulo_topico">Engajamento</h3>
+                        <p class="descricao_topico">Usuários mais ativos geram valor.</p>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+
     </section>
+
+    <section class="bloco">
+        <section class="bloco_cabecalho">
+            <h1>Tendências Emergentes em UX/UI</h1>
+            <p>
+                O campo da experiência do usuário está em constante transformação, impulsionado por avanços tecnológicos
+                e novas
+                expectativas dos usuários. As tendências emergentes apontam para um design mais inclusivo, inteligente e
+                conectado
+                com o mundo real, tornando as experiências digitais mais personalizadas e significativas.
+            </p>
+            <p class="paragrafo_guia">
+                Acompanhar essas mudanças permite criar soluções mais relevantes, acessíveis e eficazes, elevando a
+                qualidade dos
+                produtos e serviços digitais. A seguir, apresentamos algumas das principais tendências que estão
+                moldando o futuro do UX/UI.
+            </p>
+
+            <p>
+                Lista das principais tendências emergentes: 
+            </p>
+        </section>
+<div class="topicos_2colunas">
+  <section class="topicos">
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Acessibilidade</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Automação e Personalização</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Sustentabilidade no Design</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Machine Learning e IA</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Realidade Aumentada e Virtual</h3>
+      </div>
+    </article>
+  </section>
+
+  <section class="topicos">
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Interfaces de Voz</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Design Inclusivo</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Microinterações e Animações</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Interfaces Conversacionais</h3>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Design de Dados</h3>
+      </div>
+    </article>
+  </section>
+</div>
+
+    </section>
+
+<section class="bloco">
+  <section class="bloco_cabecalho">
+    <h1>Importância da UX para Desenvolvedores</h1>
+    <p>
+      Para os desenvolvedores, adotar práticas de UX vai além da estética — trata-se de criar soluções funcionais, eficientes e centradas no usuário. Um bom design melhora a usabilidade, reduz a sobrecarga de suporte e aumenta o valor percebido do produto. Com uma experiência bem pensada, os times de desenvolvimento ganham eficiência, os usuários permanecem engajados e o negócio colhe melhores resultados.
+    </p>
+  </section>
+
+  <section class="topicos">
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Satisfação do Cliente</h3>
+        <p class="descricao_topico">Interfaces claras promovem boas experiências.</p>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Redução de Custos</h3>
+        <p class="descricao_topico">Menos suporte e retrabalho no desenvolvimento.</p>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Conversões</h3>
+        <p class="descricao_topico">Experiências fluídas incentivam ações.</p>
+      </div>
+    </article>
+
+    <article class="topico">
+      <div class="icone_topico">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <div class="texto_topico">
+        <h3 class="titulo_topico">Retorno sobre o Investimento</h3>
+        <p class="descricao_topico">UX traz impacto direto e rápido no negócio.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="bloco_cabecalho" style="margin-top: 2em;">
+    <h2>Prática e Adaptação Contínua</h2>
+    <p>
+      Profissionais de UX e desenvolvimento devem estar sempre atentos às mudanças tecnológicas, às novas tendências e ao feedback dos usuários. Isso exige um ciclo constante de testes, aprendizado e aprimoramento dos produtos para garantir relevância, competitividade e satisfação contínua dos usuários.
+    </p>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="bloco">
         <article class="card_atividade" role="region" aria-labelledby="titulo-simulado">
@@ -431,8 +1757,6 @@
             </button>
         </article>
     </section>
-
-
     <script>
         function expandirBox(elemento) {
             const texto = elemento.querySelector('.topico_dropbox_descricao');
