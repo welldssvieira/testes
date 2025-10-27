@@ -16,6 +16,7 @@ window.onload = function () {
     const botaoNaoConcluido = document.querySelector("#verificacao .botoes .nao_concluido button");
     const botaoConcluirPenalidade = document.querySelector("#penalidade .botoes .botao_concluirPenalidade button");
 
+    const audio = document.querySelector("audio");
     botaoConcluirTarefa.addEventListener("click", () => {
         document.querySelector("#timer .cronometro .tarefa_ativa p").textContent = "";
         sessaoPrincipal.style.display = 'flex';
@@ -35,6 +36,8 @@ window.onload = function () {
         sessaoTimer.style.display = 'none';
         sessaoVerificacao.style.display = 'none';
         sessaoPenalidade.style.display = 'none';
+
+
     });
 
     botaoNaoConcluido.addEventListener("click", () => {
@@ -42,6 +45,8 @@ window.onload = function () {
         sessaoTimer.style.display = 'none';
         sessaoVerificacao.style.display = 'none';
         sessaoPenalidade.style.display = 'flex';
+        audio.play()
+
     });
 
     botaoConcluirPenalidade.addEventListener("click", () => {
@@ -51,7 +56,7 @@ window.onload = function () {
         sessaoPenalidade.style.display = 'none';
     });
 
-    
+
 }
 
 let tempoRestante = 5; // define aqui o tempo inicial (ex: 3600 para 1h)
@@ -63,12 +68,14 @@ function adicionarTarefa() {
     const sessaoPrincipal = document.getElementById("principal");
     const sessaoTimer = document.getElementById("timer");
     const inputEntrada = document.querySelector("#principal .entrada_de_dados input").value;
-    const tarefa_ativa = document.querySelector("#timer .cronometro .tarefa_ativa p");
+    const tarefa_ativa_Cronometro = document.querySelector("#timer .cronometro .tarefa_ativa p");
+    const tarefa_ativa_Verificacao = document.querySelector("#verificacao .check-up .tarefa_ativa p");
 
     sessaoPrincipal.style.display = 'none';
     sessaoTimer.style.display = 'flex';
 
-    tarefa_ativa.textContent = inputEntrada;
+    tarefa_ativa_Cronometro.textContent = inputEntrada;
+    tarefa_ativa_Verificacao.textContent = inputEntrada;
 
     iniciarTimer(); // inicia o cronômetro
 }
@@ -106,6 +113,7 @@ function iniciarTimer() {
             sessaoTimer.style.display = 'none';
             sessaoVerificacao.style.display = 'flex';
             sessaoPenalidade.style.display = 'none';
+
         }
 
         atualizarDisplay();
