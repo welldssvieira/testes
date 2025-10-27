@@ -59,7 +59,7 @@ window.onload = function () {
 
 }
 
-let tempoRestante = 5; // define aqui o tempo inicial (ex: 3600 para 1h)
+let tempoRestante = 3600; // define aqui o tempo inicial (ex: 3600 para 1h)
 let timer = null;
 let rodando = false;
 
@@ -124,3 +124,4 @@ function pararTimer() {
     clearInterval(timer);
     rodando = false;
 }
+
