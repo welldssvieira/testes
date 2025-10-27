@@ -1,343 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-::selection {
-  background-color: #f5f5f5;
-}
-
-html {
-  font-family: "Geist", sans-serif;
-}
-
-.bloco {
-  padding: 4% 25%;
-  margin: 50px 0;
-}
-
-/* Títulos */
-
-h1 {
-  font-size: 35px;
-  font-weight: 800;
-  margin-bottom: 30px;
-  color: #191e25;
-}
-
-h2 {
-  font-size: 25px;
-  margin-bottom: 30px;
-  font-weight: 800;
-  margin: 20px 0;
-  color: #191e25;
-}
-
-p {
-  font-size: 13px;
-  margin-bottom: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-}
-
-b {
-  font-weight: 500;
-}
-
-.paragrafo_guia {
-  margin: 20px 0;
-}
-
-/* Containers flexíveis */
-
-.topicos,
-.exemplo_texto,
-.card_atividade .textos {
+body {
+  width: 100vw;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+#principal,
+#timer,
+#verificacao,
+#penalidade {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  padding-bottom: 90px;
+}
+
+#principal {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+#principal .titulo,
+#principal .entrada_de_dados,
+#principal .botao_criarTarefa {
+  width: 365px;
+}
+
+#principal .titulo h1 {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -1%;
+  color: #161616;
+  margin-bottom: 38px;
+}
+
+#principal .entrada_de_dados input {
+  width: 350px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #BFBFBF;
+  margin-bottom: 191px;
+}
+
+#principal input:focus {
+  outline: none;
+}
+
+#principal .botao_criarTarefa button {
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #262626;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+#timer {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+#timer .cronometro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.card_atividade .textos .tags {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+#timer .cronometro .timer span {
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -2%;
+  color: #161616;
 }
 
-.topicos,
-.bloco_cabecalho {
-  margin-bottom: 40px;
+#timer .cronometro .tarefa_ativa p {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #404040;
 }
 
-.bloco_introducao {
-  margin-bottom: 50px;
-}
-
-.topico {
-  margin: 10px 0;
+#timer .botoes {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-/* Ícones dos tópicos */
+#timer .botoes .concluir button,
+#timer .botoes .nao_concluido button {
+  width: 265px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #20B864;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
 
-.icone_topico {
+#timer .botoes .deletar {
   width: 40px;
   height: 40px;
-  border-radius: 5px;
-  background-color: #e7edf3;
-  font-size: 20px;
-  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid #FF3C3C;
+  background-color: #FF3C3C;
+  color: #FF3C3C;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #191e25;
-  content: '';
+  cursor: pointer;
 }
 
-/* Textos dos tópicos */
-
-.titulo_topico {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #191e25;
-}
-
-.descricao_topico {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #606060;
-}
-
-/* Exemplo texto */
-
-.exemplo_texto {
-  background-color: #f5f5f5;
-  border: 1px solid #e7edf3;
-  width: 100%px;
-  height: 150px;
-  border-radius: 10px;
-  padding: 15px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.exemplo_texto_titulo {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-  margin-bottom: 20px;
-}
-
-.exemplo_texto_descricao {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-}
-
-/* Tabela */
-
-table {
-  width: 100%px;
-  height: 150px;
-  border-collapse: collapse;
-  border-radius: 10px;
-  padding: 15px 40px;
-  font-size: 15px;
-  text-align: start;
-  border: 1px solid #e7edf3;
-  margin-bottom: 20px;
-}
-
-caption {
-  margin: 20px 0;
-  font-size: 12px;
-  color: #606060;
-}
-
-th,
-td,
-tr {
+#verificacao .botoes .concluido button,
+#verificacao .botoes .nao_concluido button {
+  width: 155px;
   height: 40px;
-  border: 1px solid #e7edf3;
-}
-
-th {
-  background-color: #f5f5f5;
-}
-
-tr {
-  background-color: #ffffff;
-}
-
-td {
-  padding-left: 25px;
-}
-
-/* Topico Dropbox */
-
-.topico_dropbox,
-.timeline .topico_dropbox {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  width: 100%px;
-  height: 80px;
-  padding: 15px 40px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  border: 1px solid #e7edf3;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
-
-.timeline .topico_dropbox {
-  background-color: #ffffff;
-  border-left: none;
-  border-right: none;
-  border-radius: 0;
-}
-
-.topico_dropbox_cabecalho,
-.timeline .topico_dropbox_cabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.topico_dropbox_cabecalho .titulo,
-.timeline .topico_dropbox_cabecalho .titulo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-}
-
-.topico_dropbox_descricao,
-.timeline .topico_dropbox_descricao {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-  display: none;
-}
-
-.topico_dropbox_cabecalho .icone img,
-.timeline .topico_dropbox_cabecalho .icone img {
-  width: 30px;
-}
-
-/* Card atividade */
-
-.card_atividade {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f5f5f5;
-  border: 1px solid #e7edf3;
-  width: 100%px;
-  height: 200px;
-  border-radius: 10px;
-  padding: 15px 40px;
-  margin-bottom: 10px;
-}
-
-.card_atividade .textos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.card_atividade .textos .titulo {
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-  margin-bottom: 20px;
-}
-
-.card_atividade .textos .subtitulo {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  color: #191e25;
-}
-
-.card_atividade .textos .tags {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.card_atividade .textos .tags .tag {
-  border: 1px solid #191e25;
-  border-radius: 50px;
-  padding: 5px 15px;
-  margin-right: 5px;
-  font-size: 10px;
-}
-
-.card_atividade .botao {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 140px;
-  height: 50px;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
+  background-color: #20B864;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
 }
 
-.card_atividade .botao .icone {
+#verificacao .botoes .nao_concluido button {
+  border: 1px solid #FF3C3C;
+  background-color: transparent;
+  color: #FF3C3C;
+}
+
+#verificacao {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+
+#verificacao .check-up {
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  flex-direction: column;
+  margin-bottom: 300px;
 }
 
-.card_atividade .botao .icone img {
-  width: 15px;
+#verificacao .check-up .titulo span {
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -2%;
+  color: #161616;
 }
 
-.card_atividade .botao .texto {
-  font-size: 15px;
+#verificacao .cronometro .tarefa_ativa p {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #404040;
 }
 
-/* Marcador com animação */
-
-.marcador {
-  background: linear-gradient(to right, #fff59d 0%, #fff59d 100%);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  animation: destaque 2s ease-out forwards;
-  padding: 0 2px;
-  border-radius: 2px;
+#verificacao .botoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes destaque {
-  from {
-    background-size: 0% 100%;
-  }
+#verificacao .botoes .concluir button {
+  width: 265px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #262626;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
 
-  to {
-    background-size: 100% 100%;
-  }
+#verificacao .botoes .deletar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #FF3C3C;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+#penalidade {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  background-color: #FF3C3C;
+}
+
+#penalidade .check-up {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#penalidade .check-up .titulo span {
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+
+#penalidade .cronometro .nome_penalidade p {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #404040;
+}
+
+#penalidade .botoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#penalidade .botoes .botao_concluirPenalidade button {
+  width: 265px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #262626;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #ffffff;
 }
